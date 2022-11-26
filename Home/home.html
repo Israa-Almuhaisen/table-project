@@ -7,19 +7,32 @@
     <title>home</title>
 </head>
 <body>
-    <h2>Your Order</h2>
+    <h2>Your Order <span id="username"></span></h2>
     <form action="">
+        
         <label>Customer Name</label>
-        <input  type="text" value="">
+        <input  id="" type="text" value="">
+        
         <label> Your Order</label>
-        <select style="display:block;" id="selectfood" onchange="load2()">
-            <option value= "./photo/1000_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"  style= "display: block;height:30vh ;width:30vw">select</option>
-            <option  id= "jor" value="./photo/Flag_of_Jordan.png" >Jordan</option>         
-             <option  id= "de" value="./photo/flag_of_germany.png">Germany</option>
-            <option  id= "fra" value="./photo/France.jpg">France</option>
-            <option  id= "it" value="./photo/flag-of-italy.png">Italy</option>
-            <option  id= "gr" value="">Greece</option>
-          </select>
+        <select id="selectfood" onchange="load2()">
+            <option value= "">select</option>
+            <option id="" value="./">dessert</option>
+            <option id="" value="./">appetizer</option>
+            <option id="" value="./">mainCo</option>
+        </select>
+
+        <button id="orderbtn" >ask for cheif</button>
+    </form>
+  
+        <button id="hidetable" >Remove Table Content</button>
+        <button id="deletetable" >Delete LocalStorage Content</button>
+    
+        <div id="ordertable">
+
+        </div>
+<script src="./home.js"></script>
+            
+         
 
     
 </body>
