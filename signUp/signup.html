@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./Signup.css"> -->
+    <link rel="icon" href="../image/logo-home.png">
+    <title>Smart System</title>
+    <style>
+        #btn{
+            width: 100px;
+            background-color:rgba(83, 126, 72, 0.759);
+            color: white;
+            border-radius: 6px;
+            height: 40px;
+            font-size: 20px;
+            margin-left: 30px;
+        }  
+        #btn:hover {
+            background-color: rgb(177, 81, 81);
+
+            }
+    </style>
+
+</head>
+<body>
+    
+        <h1 style=" margin-left:100px;">Sign Up Account</h1>
+        <form  action="../login-page/LoginPage.html">
+          
+                <label>Name:</label>
+                <input id="my-username" type="username" value="" onchange="setValueforName()"> 
+                <div id="username-warining" style="display: none; color:red; font-size: 15px;">Please don't use numbers or Char. And don't let it empty.</div>
+                <div id="username-accept" style="display: none; color:green; font-size: 15px;">Username is okay.</div>
+         
+            <br><br>
+        
+                <label> Password:</label> 
+                <input id="my-password" type="password" value="" onchange="setValueforPassword()">
+                <div id="password-warining" style="display: none; color:red; font-size: 10px;">Please use capital and small letters, numbers and special Char in your password.</div>
+                <div id="password-accept" style="display: none; color:green; font-size: 15px;">Password is okay.</div>
+            
+<br><br>
+     
+            <button id="btn">Sign Up</button>
+            <span>If you have already account <a href="../logIn/login.html" id="haveAcc">Click Here</a></span>
+        </form>
+        </div>
+    </div> 
+    <script src="Signup.js"></script>
+</body>
+</html>
+   

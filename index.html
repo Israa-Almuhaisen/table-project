@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table menu</title>
+
+    <style>
+        body{
+            margin-top: 20vh;
+            margin-left: 30vw;
+            background-color: beige;
+        }
+        h1{
+            color: rgb(26, 4, 94);
+        }
+        h2{
+            color: rgb(173, 45, 45);
+        }
+        .stylebtn{
+            width: 100px;
+            background-color:rgba(218, 171, 180, 0.759);
+            color: white;
+            border-radius: 6px;
+            height: 40px;
+            font-size: 20px;
+            margin-left: 30px;
+        }  
+        .stylebtn:hover {
+            background-color: rgb(177, 81, 81);
+
+            }     
+    </style>
+
+</head>
+
+<body>
+    <h1>Welcom To RESTAURANT</h1>
+   
+        <h2>If You Dont Have Account</h2>
+        <button class="stylebtn" id="sign" onclick="goToSignUp()">Sign Up</button>
+        <br>
+        <br>
+        <h2>If You Have Account</h2>
+        <button class="stylebtn" id="log" onclick="goToLogIn()">LogIn</button>
+      </form>
+
+      <script>
+        function goToSignUp() {
+            window.location.href = `./signUp/signup.html`
+        }
+        function goToLogIn() {
+            window.location.href = './logIn/login.html'
+        }
+    </script>
+
+</body>
+</html>
