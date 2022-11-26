@@ -66,7 +66,7 @@ function btnsignup(){
        
         window.localStorage.setItem(`userInfo` , JSON.stringify(arrayToStorage))
         // window.sessionStorage.setItem(`userInfo` , JSON.stringify(arrayToStorage))
-        window.location.href = './logIn/login.html'
+        window.location.href = "./logIn/login.html"
 
 
     }else {
