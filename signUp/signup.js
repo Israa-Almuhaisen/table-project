@@ -47,9 +47,9 @@ function setValueforPassword() {
 
 
 
-let formEvent = document.getElementById("btn")     
-formEvent.onclick = function (event) {
-
+// let formEvent = document.getElementById("btn")     
+// formEvent.onclick = function (event) {
+function btnsignup(){
     arrayOfKeysAndValues.push(obj)
     console.log(obj);
     let checkName = document.getElementById("my-username").value;
