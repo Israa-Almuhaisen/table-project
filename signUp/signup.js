@@ -1,3 +1,4 @@
+alert('dddddddddddddd')
 var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 let arrayOfKeysAndValues = JSON.parse(localStorage.getItem('userInfo')) || [];
 let arrayToStorage = JSON.parse(localStorage.getItem('userInfo')) || [];
