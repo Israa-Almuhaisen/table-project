@@ -10,7 +10,11 @@
         body{
             margin-top: 20vh;
             margin-left: 30vw;
-            background-color: beige;
+            background-color:  rgba(177, 81, 81, 0.529);
+            background-image:url("./rest.png");
+            background-size: cover;
+            
+            background-repeat: no-repeat;
         }
         h1{
             color: rgb(26, 4, 94);
@@ -30,21 +34,33 @@
         .stylebtn:hover {
             background-color: rgb(177, 81, 81);
 
-            }     
+            } 
+            .styleform{
+                background-color: rgba(255, 255, 255, 0.074);
+                width: 400px;
+                margin-left: 350px;
+                padding-left: 60px;
+                padding-right: 30px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-radius: 40px;
+            }    
     </style>
 
 </head>
 
 <body>
+    <div class="styleform">
     <h1>Welcom To RESTAURANT</h1>
    
-        <h2>If You Dont Have Account</h2>
+        <h2>If You Dont Have An Account</h2>
         <button class="stylebtn" id="sign" onclick="goToSignUp()">Sign Up</button>
         <br>
         <br>
-        <h2>If You Have Account</h2>
+        <h2>If You Have An Account</h2>
         <button class="stylebtn" id="log" onclick="goToLogIn()">LogIn</button>
       </form>
+    </div>
 
       <script>
         function goToSignUp() {
