@@ -1,4 +1,3 @@
-alert('dddddddddddddd')
 var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 let arrayOfKeysAndValues = JSON.parse(localStorage.getItem('userInfo')) || [];
 let arrayToStorage = JSON.parse(localStorage.getItem('userInfo')) || [];
@@ -50,7 +49,7 @@ function setValueforPassword() {
 
 // let formEvent = document.getElementById("btn")     
 // formEvent.onclick = function (event) {
-function btnsignup(event){
+function btnsignup(){
     arrayOfKeysAndValues.push(obj)
     console.log(obj);
     let checkName = document.getElementById("my-username").value;
