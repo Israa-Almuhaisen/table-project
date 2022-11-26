@@ -65,7 +65,8 @@ function removetable(){
 }
 
 function deletetable(){
-    localStorage.removeItem('arryorders')
+    localStorage.removeItem('arryorders');
+    arryorders=[];
      document.getElementById("ordertable").innerHTML = "";
 
 }
