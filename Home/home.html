@@ -5,29 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <style>
+        .tablestyle{
+            border-color: red;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-    <h2>Your Order <span id="username"></span></h2>
-    <form action="">
+   
+    <div >Welcom <span id="username"></span> ,Your Order</div>
+
+    <form  style="border:2px solid black ; margin-top: 10px; margin-bottom: 40px; padding: 20px;">
         
         <label>Customer Name</label>
-        <input  id="" type="text" value="">
+        <input  id="cnametxt" type="text" placeholder="name" value=""/>
         
         <label> Your Order</label>
-        <select id="selectfood" onchange="load2()">
+        <select id="selectfood">
             <option value= "">select</option>
-            <option id="" value="./">dessert</option>
-            <option id="" value="./">appetizer</option>
-            <option id="" value="./">mainCo</option>
+            <option id="" value="dessert">dessert</option>
+            <option id="" value="appetizer">appetizer</option>
+            <option id="" value="mainCo">mainCo</option>
         </select>
 
-        <button id="orderbtn" >ask for cheif</button>
+        <button id="orderbtn" onclick="add2order()">ask for cheif</button>
     </form>
   
-        <button id="hidetable" >Remove Table Content</button>
-        <button id="deletetable" >Delete LocalStorage Content</button>
+        <button  onclick="removetable()" >Remove Table Content</button>
+        <button onclick="deletetable()" >Delete LocalStorage Content</button>
     
         <div id="ordertable">
+        
 
         </div>
 <script src="./home.js"></script>
