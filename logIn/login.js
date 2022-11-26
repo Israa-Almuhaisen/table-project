@@ -14,7 +14,7 @@ formLogInEvent.onclick = function (event) {
             if (valueFromPasswordLog == arrayOfKeysAndValues[i].password) {
                 let objectFindUser = arrayOfKeysAndValues[i];
                 localStorage.setItem('current-user', JSON.stringify(objectFindUser))
-                window.location.href = "../Home/home.html"
+                window.location.href ="../Home/home.html"
                 break  
             }
             else {
